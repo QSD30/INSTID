@@ -54,7 +54,7 @@ controlnet_path = f'./checkpoints/ControlNetModel'
 #controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch.float16)
 controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch_dtype)
 
-#base_model_path = 'stablediffusionapi/juggernaut-xl-v7'
+#base_model_path = 'Lykon/AAM_XL_AnimeMix'
 
 
 
@@ -419,7 +419,7 @@ if __name__ == '__main__':
     parser.add_argument('--inbrowser', action='store_true', help='Open in browser')
     parser.add_argument('--server_port', type=int, default=7860, help='Server port')
     parser.add_argument('--share', action='store_true', help='Share the Gradio UI')
-    parser.add_argument('--model_path', type=str, default='stablediffusionapi/juggernaut-xl-v8', help='Base model path')
+    parser.add_argument('--model_path', type=str, default='Lykon/AAM_XL_AnimeMix', help='Base model path')
     parser.add_argument('--medvram', action='store_true', help='Medium VRAM settings')
     parser.add_argument('--lowvram', action='store_true', help='Low VRAM settings')
 
@@ -464,7 +464,7 @@ if __name__ == '__main__':
     # Set the base_model_path based on the argument
     base_model_path = args.model_path
 
-    # If no argument is provided, it defaults to 'stablediffusionapi/juggernaut-xl-v8'
+    # If no argument is provided, it defaults to 'Lykon/AAM_XL_AnimeMix'
     
     # Display only the arguments currently in use
     print("Arguments currently in use:")
